@@ -1,4 +1,4 @@
-
+import AddItemToCart from "../AddToCart"
 
 const LongProductCard = ({ product }) => {
 
@@ -12,6 +12,14 @@ const LongProductCard = ({ product }) => {
                 <h3>{product.productName}</h3>
                 <p>{product.longDesc}</p>
                 <p>${product.price}</p>
+                <AddItemToCart 
+                    id={product.id} 
+                    productName={product.productName} 
+                    imgSrc={product.imageSrc} 
+                    price={product.price} 
+                    var1={product.variants[0]}
+                    var2={product.variants[1]}
+                />
             </div>
         </>
     )

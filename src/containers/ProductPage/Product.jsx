@@ -30,16 +30,7 @@ const Product = () => {
             key={product.id}
             product={product}
             />
-
-            <AddItemToCart 
-                id={product.id} 
-                productName={product.productName} 
-                imgSrc={product.imageSrc} 
-                price={product.price} 
-                var1={product.variants[0]}
-                var2={product.variants[1]}
                 
-            />
         </div>
         </>
     )
