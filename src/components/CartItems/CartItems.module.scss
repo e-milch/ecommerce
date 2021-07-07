@@ -1,0 +1,17 @@
+.CartItems {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: fit-content;
+
+    img {
+        padding: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+}
