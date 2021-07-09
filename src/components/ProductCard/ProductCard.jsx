@@ -1,19 +1,11 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-// import { getProduct } from "../../services/products";
 import AddItemToCart from "../AddToCart";
-import { createCartItem } from "../../services/cart";
+import styles from "./ProductCard.module.scss"
 
 const ProductCard = ({ product }) => {
-    // const { id } = useParams();
-
-    
-    
-    
 
     return (
-        <>
+        <div className={styles.ProductCard}>
             <div>
                 <img src={product.imageSrc} alt="" />
             </div>
@@ -32,7 +24,7 @@ const ProductCard = ({ product }) => {
                     var2={product.variants[1]}
                 />
             </div>
-        </>
+        </div>
     )
 }
 

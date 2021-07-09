@@ -3,10 +3,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     
 }
 
 .nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    padding: 20px;
 }
+
