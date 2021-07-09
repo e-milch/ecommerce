@@ -1,2 +1,2 @@
-import CartCounter from "./CartCounter";
-export default CartCounter;
+// import CartCounter from "./CartCounter";
+// export default CartCounter;

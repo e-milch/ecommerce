@@ -1,25 +1,27 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
-import { getCartCount } from "../../services/cart";
+// import { getCartCount } from "../../services/cart";
 
-const CartCounter = () => {
-    const [count, setCount] = useState();
 
-    const getData = async () => {
-        const data = await getCartCount();
-         setCount(data);
-    };
 
-    useEffect(() => {
-        getData();
-    }, [count]);
+// const CartCounter = () => {
+//     const [count, setCount] = useState();
 
-    return (
-        <>
-            <p>({count})</p>
-        </>
-    )
+//     const getData = async () => {
+//         const data = await getCartCount();
+//          setCount(data);
+//     };
 
-}
+//     useEffect(() => {
+//         getData();
+//     }, [count]);
 
-export default CartCounter;
+//     return (
+//         <>
+//             <p>({count})</p>
+//         </>
+//     )
+
+// }
+
+// export default CartCounter;

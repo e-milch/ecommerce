@@ -1,12 +1,12 @@
+import { useState } from "react";
 
-
-const UpdateQuantity = ({ qty, onAdd, onRemove }) => {
+const UpdateQuantity = ({ onChange, value }) => {
 
     return (
         <>
-            <button onClick={onRemove}>-</button>
-            {qty}
-            <button onClick={onAdd}>+</button>
+            <button onClick={() => onChange(value - 1)}>-</button>
+            {value}
+            <button onClick={() => onChange(value + 1)}>+</button>
         </>
     )
 }

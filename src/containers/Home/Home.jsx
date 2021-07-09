@@ -1,13 +1,17 @@
-import NavHeader from "../../components/NavHeader";
 import { useState, useEffect } from "react";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartProvider";
+
 // import ProductCards from "../../components/ProductCards"
 import ProductCard from "../../components/ProductCard";
 import Slider from "../../components/Slider";
-
 import { getProducts } from "../../services/products";
+import NavHeader from "../../components/NavHeader";
+
 
 const Home = () => {
     const [products, setProducts] = useState([]);
+    const  count = useContext(CartContext);
 
     useEffect(() => {
         const getData = async () => {
@@ -21,7 +25,7 @@ const Home = () => {
     return (
         <>
            <div>
-               <NavHeader />
+               <NavHeader count={count} />
            </div>
 
            <div>

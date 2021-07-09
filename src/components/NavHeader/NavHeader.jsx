@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "./NavHeader.module.scss"
+// import { CartContext } from "../../context/CartProvider";
+// import { useContext } from "react";
 
 import CartCounter from "../CartCounter";
 
-const NavHeader = () => {
+const NavHeader = ( count ) => {
+    // const  count = useContext(CartContext);
 
     return (
         <header className={styles.NavHeader}>
@@ -13,7 +16,7 @@ const NavHeader = () => {
         <nav className={styles.nav}>
             <div>
                 <Link to="/cart">
-                    Cart <CartCounter />
+                    {`Cart ${count.count}`}
                 </Link>
             </div>
             <div>
